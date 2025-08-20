@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형헤더</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        window.onload = () => {
+            document.querySelector('.nav_btn').addEventListener('click', () => {
+                document.querySelector('.nav-mobile').classList.add('active');
+
+            });
+
+            document.querySelector('.close_btn').addEventListener('click', () => {
+                document.querySelector('.nav-mobile').classList.remove('active');
+
+            });
+        }
+
+
+
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="inner">
+            <h1 class="logo">
+                <a href="#">
+                    <img src="img/이노션 로고.svg" alt="">
+                </a>
+            </h1><!-- .logo end -->
+            <nav class="nav-pc pc">
+                <ul class="gnb">
+                    <li><a href="#">ABOUTS</a></li>
+                    <li><a href="#">WORKS</a></li>
+                    <li><a href="#">SOLUTIONS</a></li>
+                    <li><a href="#">INSIGHTS</a></li>
+                    <li><a href="#">CAREERES</a></li>
+                    <li><a href="#">CONTACTS</a></li>
+                </ul><!-- .gnb end -->
+            </nav><!-- .nav-pc end -->
+            <ul class="lang pc">
+                <li><a href="#">KOR</a></li>
+                <li><a href="#">ENG</a></li>
+            </ul><!-- .lang pc end -->
+
+            <button class="nab_btn mobile">
+                <img src="img/이노션 카테고리.svg" alt="">
+            </button><!-- .nab_btn mobile end -->
+
+            <nav class="nav-mobile mobile">
+                <button class="close_btn mobile">
+                    <img src="img/이노션 닫기.svg" alt="">
+                </button><!-- .close_btn mobile end -->
+                <ul class="gnb">
+                    <li><a href="#">ABOUTS</a></li>
+                    <li><a href="#">WORKS</a></li>
+                    <li><a href="#">SOLUTIONS</a></li>
+                    <li><a href="#">INSIGHTS</a></li>
+                    <li><a href="#">CAREERES</a></li>
+                    <li><a href="#">CONTACTS</a></li>
+                </ul><!-- gnb end -->
+                <ul class="lang moble">
+                    <li><a href="#">KOR</a></li>
+                    <li><a href="#">ENG</a></li>
+                </ul><!-- .lang mobile end -->
+            </nav><!-- .nav-mobile mobile end -->
+        </div><!-- .inner end -->
+    </header><!-- .header.end -->
+
+    <main class="main pc">
+        <section class="main_visual">
+            <img src="img/이노션 이미지.png" alt="We are Innovative Solutionists">
+        </section><!--.main_visual end -->
+    </main><!-- .main end -->
+
+</body>
+
+</html>
